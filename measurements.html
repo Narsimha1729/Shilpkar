@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Measurement Checklist</title>
+  <link rel="stylesheet" href="measurements.css"> <!-- You can link your CSS file here -->
+</head>
+<body>
+  <header class="header">
+    <h1>Body Measurement Checklist</h1>
+  </header>
+  <section class="form-container">
+    <form action="/submit-measurements" method="post" id="measurement-form">
+      <div class="form-group">
+        <div class="input-box">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+  <div class="input-box">
+    <label for="customer-id" class="form-label">Customer Reference ID:</label>
+    <input type="text" id="customer-id" name="customer-id" class="form-input" required>
+  </div>
+  
+  <div class="input-box">
+    <label for="gender" class="form-label">Gender:</label>
+    <select id="gender" name="gender" class="form-input" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+</div>
+
+
+  <section class="form-container">
+    <form action="/submit-measurements" method="post" id="measurement-form">
+      <h2>Body Measurements</h2>
+      <ul class="checklist">
+        <li><input type="text" id="height" name="height"><label for="height">Height: Total height from head to toe.</label></li>
+        <li><input type="text" id="chest" name="chest"><label for="chest">Chest/Bust: Circumference around the fullest part of the chest.</label></li>
+        <li><input type="text" id="waist" name="waist"><label for="waist">Waist: Circumference around the narrowest part of the waist.</label></li>
+        <li><input type="text" id="hips" name="hips"><label for="hips">Hips: Circumference around the fullest part of the hips.</label></li>
+        <li><input type="text" id="neck" name="neck"><label for="neck">Neck: Circumference around the base of the neck.</label></li>
+        <li><input type="text" id="shoulders" name="shoulders"><label for="shoulders">Shoulders: Width from one shoulder to the other.</label></li>
+      </ul>
+
+      <h2>Upper Body Measurements</h2>
+      <ul class="checklist">
+        <li><input type="text" id="arm-length" name="arm-length"><label for="arm-length">Arm Length: From shoulder to wrist.</label></li>
+        <li><input type="text" id="bicep" name="bicep"><label for="bicep">Bicep: Circumference around the widest part of the upper arm.</label></li>
+        <li><input type="text" id="elbow" name="elbow"><label for="elbow">Elbow: Circumference around the elbow with arm bent.</label></li>
+        <li><input type="text" id="wrist" name="wrist"><label for="wrist">Wrist: Circumference around the wrist.</label></li>
+        <li><input type="text" id="upper-arm-length" name="upper-arm-length"><label for="upper-arm-length">Upper Arm Length: From shoulder to elbow.</label></li>
+        <li><input type="text" id="forearm-length" name="forearm-length"><label for="forearm-length">Forearm Length: From elbow to wrist.</label></li>
+      </ul>
+
+      <h2>Lower Body Measurements</h2>
+      <ul class="checklist">
+        <li><input type="text" id="inseam" name="inseam"><label for="inseam">Inseam: From crotch to ankle.</label></li>
+        <li><input type="text" id="outseam" name="outseam"><label for="outseam">Outseam: From waist to ankle.</label></li>
+        <li><input type="text" id="thigh" name="thigh"><label for="thigh">Thigh: Circumference around the fullest part of the thigh.</label></li>
+        <li><input type="text" id="knee" name="knee"><label for="knee">Knee: Circumference around the knee.</label></li>
+        <li><input type="text" id="calf" name="calf"><label for="calf">Calf: Circumference around the fullest part of the calf.</label></li>
+        <li><input type="text" id="ankle" name="ankle"><label for="ankle">Ankle: Circumference around the ankle.</label></li>
+      </ul>
+
+      <h2>Additional Measurements</h2>
+      <ul class="checklist">
+        <li><input type="text" id="back-length" name="back-length"><label for="back-length">Back Length: From the base of the neck to the waist.</label></li>
+        <li><input type="text" id="front-length" name="front-length"><label for="front-length">Front Length: From the shoulder to the waist.</label></li>
+        <li><input type="text" id="torso-length" name="torso-length"><label for="torso-length">Torso Length: From shoulder to crotch (important for jumpsuits or bodysuits).</label></li>
+      </ul>
+
+      <h2>Any Customization:</h2>
+      <!-- Customization -->
+<div class="form-group customization-group">
+  <label for="customization"></label>
+  <input type="text" id="customization" name="customization" class="customization-input">
+</div>
+
+      <button type="submit" class="submit-button">Submit Measurements</button>
+    </form>
+  </section>
+
+  <script src="measurements.js"></script> <!-- You can include your script file here -->
+</body>
